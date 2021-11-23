@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 
     QPixmap pixSplash(":/static/splashscreen.png");
 
-    QSplashScreen *splash = new QSplashScreen(pixSplash);
+    auto *splash = new QSplashScreen(pixSplash);
 
     splash->show();
 
