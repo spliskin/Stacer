@@ -127,6 +127,7 @@ void SystemCleanerPage::systemScan()
         ui->checkAppLog->isChecked()       ||
         ui->checkAppCache->isChecked()     ||
         ui->checkTrash->isChecked()
+        //|| ui->checkTmp->isChecked()
     ){
         ui->btnScan->hide();
         ui->lblLoadingScanner->show();

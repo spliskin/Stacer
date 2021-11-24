@@ -10,6 +10,7 @@
 #define LSCPU_COMMAND "LANG=en_US.UTF-8 lscpu"
 #define PROC_LOADAVG "/proc/loadavg"
 #define PROC_STAT    "/proc/stat"
+#define TMPWATCH_COMMAND "LANG=en_US.UTF-8 tmpwatch"
 
 #include "stacer-core_global.h"
 
