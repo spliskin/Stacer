@@ -9,7 +9,7 @@
 
 #define PROC_MOUNTS "/proc/mounts"
 
-class Disk;
+struct Disk;
 
 class STACERCORESHARED_EXPORT DiskInfo
 {
