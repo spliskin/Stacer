@@ -8,11 +8,11 @@ HostManage::~HostManage()
 }
 
 HostManage::HostManage(QWidget *parent):
-    QWidget(parent),
+    QWidget(parent),    
+    ui(new Ui::HostManage),
     mItemModel(new QStandardItemModel(this)),
     mSortFilterModel(new QSortFilterProxyModel(this)),
-    updatedLine(-1),
-    ui(new Ui::HostManage)
+    updatedLine(-1)
 {
     ui->setupUi(this);
 

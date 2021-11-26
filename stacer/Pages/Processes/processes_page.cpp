@@ -11,9 +11,9 @@ ProcessesPage::ProcessesPage(QWidget *parent) :
   QWidget(parent),
   ui(new Ui::ProcessesPage),
   mItemModel(new QStandardItemModel(this)),
-  mSortFilterModel(new QSortFilterProxyModel(this)),
-  im(InfoManager::ins()),
-  mTimer(new QTimer(this))
+  mSortFilterModel(new QSortFilterProxyModel(this)),  
+  mTimer(new QTimer(this)),
+  im(InfoManager::ins())
 {
     ui->setupUi(this);
 

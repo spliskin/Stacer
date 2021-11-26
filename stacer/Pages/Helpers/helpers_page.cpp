@@ -7,9 +7,9 @@ HelpersPage::~HelpersPage()
 }
 
 HelpersPage::HelpersPage(QWidget *parent) :
-    QWidget(parent),
-    widgetHostManage(new HostManage),
-    ui(new Ui::HelpersPage)
+    QWidget(parent),    
+    ui(new Ui::HelpersPage),
+    widgetHostManage(new HostManage)
 {
     ui->setupUi(this);
 
@@ -21,9 +21,9 @@ void HelpersPage::init()
     ui->stackedWidget->addWidget(widgetHostManage);
     //ui->stackedWidget->addWidget();
 
-    Utilities::addDropShadow({
+    Utilities::addDropShadow(
         ui->btnHostManage
-    }, 40);
+    , 40);
 }
 
 void HelpersPage::on_btnHostManage_clicked()
