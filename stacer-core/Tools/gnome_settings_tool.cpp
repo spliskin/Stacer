@@ -19,7 +19,7 @@ bool GnomeSettingsTool::checkUnityAvailable()
             GSchemas::Unity::Shell, GSchemas::Unity::Launcher, GSchemas::Unity::Lens, GSchemas::Unity::AppLens,
             GSchemas::Unity::FileLens, GSchemas::Unity::DateTime, GSchemas::Unity::Sound, GSchemas::Unity::Session
         };
-        for (const QString schema: schemas) {
+        for (const QString& schema: schemas) {
             if (! keys.contains(schema.trimmed())) {
                 return false;
             }
