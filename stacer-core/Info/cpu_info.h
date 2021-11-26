@@ -3,6 +3,7 @@
 
 #include <QDebug>
 #include <QVector>
+#include <QList>
 
 #include "Utils/file_util.h"
 
